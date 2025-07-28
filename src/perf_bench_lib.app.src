@@ -1,0 +1,10 @@
+{application, perf_bench_lib,
+ [
+  {description, "Erlang Performance Benchmark Library"},
+  {vsn, "1.0.0"},
+  {modules, [perf_bench_lib, perf_bench_worker]},
+  {registered, []},
+  {applications, [kernel, stdlib]},
+  {env, []},
+  {mod, {perf_bench_lib, []}}
+ ]}.
