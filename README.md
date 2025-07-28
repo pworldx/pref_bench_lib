@@ -17,7 +17,7 @@ Reusable as a library or standalone tool
 Add this to your erlang project:
 
 {deps, [
-  {perf_bench_lib, {git, "https://github.com/YOUR-USERNAME/perf_bench_lib.git", {branch, "main"}}}
+  {perf_bench_lib, {git, "https://github.com/pworldx/perf_bench_lib.git", {branch, "main"}}}
 ]}.
 
 Tests :
