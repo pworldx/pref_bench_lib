@@ -14,7 +14,8 @@ Benchmarks raw loops, ETS, and message passing
 Configurable iterations and workers  
 Reusable as a library or standalone tool  
 
-Add this to your erlang project
+Add this to your erlang project:
+
 {deps, [
   {perf_bench_lib, {git, "https://github.com/YOUR-USERNAME/perf_bench_lib.git", {branch, "main"}}}
 ]}.
