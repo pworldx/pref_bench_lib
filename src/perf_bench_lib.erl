@@ -39,7 +39,7 @@ benchmark_loop(Iterations, Workers) ->
             || _ <- lists:seq(1, Workers)],
     wait(Pids),
     End = erlang:monotonic_time(millisecond),
-    io:format("✅ Loop Benchmark: ~p iterations in ~p ms (~p sec)~n",
+    io:format(" Loop Benchmark: ~p iterations in ~p ms (~p sec)~n",
               [Iterations, End-Start, (End-Start)/1000.0]).
 
 benchmark_ets(Iterations, Workers) ->
@@ -50,7 +50,7 @@ benchmark_ets(Iterations, Workers) ->
             || _ <- lists:seq(1, Workers)],
     wait(Pids),
     End = erlang:monotonic_time(millisecond),
-    io:format("✅ ETS Benchmark: ~p insert/read in ~p ms (~p sec)~n",
+    io:format(" ETS Benchmark: ~p insert/read in ~p ms (~p sec)~n",
               [Iterations, End-Start, (End-Start)/1000.0]),
     ets:delete(Table).
 
@@ -61,7 +61,7 @@ benchmark_msg(Iterations, Workers) ->
             || _ <- lists:seq(1, Workers)],
     wait(Pids),
     End = erlang:monotonic_time(millisecond),
-    io:format("✅ Message Passing: ~p messages in ~p ms (~p sec)~n",
+    io:format(" Message Passing: ~p messages in ~p ms (~p sec)~n",
               [Iterations, End-Start, (End-Start)/1000.0]).
 
 wait([]) -> ok;
