@@ -29,6 +29,6 @@ Tests :
 
 Results :
 Running benchmark (all mode) with 1000000000 iterations and 8 workers
- Loop Benchmark: 1000000000 iterations in 1420 ms (1.42 sec)
- ETS Benchmark: 1000000000 insert/read in 2840 ms (2.84 sec)
- Message Passing: 1000000000 messages in 3650 ms (3.65 sec
+Loop Benchmark: 1000000000 iterations in 1420 ms (1.42 sec)
+ETS Benchmark: 1000000000 insert/read in 2840 ms (2.84 sec)
+Message Passing: 1000000000 messages in 3650 ms (3.65 sec)
